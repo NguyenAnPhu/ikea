@@ -1,0 +1,117 @@
+.faq {
+    margin-top: 120px;
+    gap: 24px;
+
+    @include max-width-768 {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    &_title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary-normal;
+    }
+
+    &_content {
+        gap: 4px;
+
+        span {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            color: #262626;
+
+            @include max-width-768 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $neutral-light_active;
+            text-align: center;
+            padding: 0px 8px 0px 8px;
+
+            @include max-width-768 {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .QnA {
+        gap: 22px;
+        margin-top: 20px;
+
+        @include max-width-768 {
+            margin: auto;
+        }
+
+        .accordion-item {
+            border: none;
+            gap: 32px;
+
+            @include max-width-768 {
+                gap: 12px;
+            }
+
+            .accordion-button {
+                padding: 16px 0;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+
+                @include max-width-768 {
+                    font-size: 16px;
+                    line-height: 24px;
+
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &::after {
+                    background-image: url('../icons/plus.svg');
+
+                }
+
+                &:not(.collapsed) {
+                    background-color: white;
+                    color: #000;
+
+                    &::after {
+                        background-image: url('../icons/minus.svg');
+                        transform: none !important;
+                    }
+                }
+            }
+
+            .accordion-body {
+                color: $neutral-light_active;
+                padding: 0;
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+
+                @include max-width-768 {
+                    font-size: 12px;
+                    line-height: 16px;
+
+                }
+            }
+
+            .divide {
+                height: 2px;
+                margin: 0;
+                background-color: #000;
+            }
+        }
+    }
+}

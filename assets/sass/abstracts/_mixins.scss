@@ -1,0 +1,33 @@
+$width-375: 375px;
+$width-576: 576px;
+$width-768: 768px;
+$width-992: 992px;
+$width-1440: 1440px;
+
+@mixin max-width-375 {
+    @media (max-width: #{$width-375}) {
+        @content;
+    }
+}
+
+@mixin max-width-576 {
+    @media (max-width: #{$width-576}) {
+        @content;
+    }
+}
+@mixin max-width-768 {
+    @media (max-width: #{$width-768}) {
+        @content;
+    }
+}
+@mixin max-width-992 {
+    @media (max-width: #{$width-992}) {
+        @content;
+    }
+}
+@mixin min-width-1440 {
+    @media (max-width: #{$width-1440}) {
+        @content;
+    }
+}
+

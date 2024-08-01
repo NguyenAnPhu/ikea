@@ -1,0 +1,11 @@
+.hero {
+    background-image: url("../images/bg_hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include max-width-375 {
+        width: 100%;
+        height: auto;
+    }
+}

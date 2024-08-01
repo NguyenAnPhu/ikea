@@ -1,0 +1,96 @@
+.review {
+    margin-top: 100px;
+
+    @include max-width-768 {
+        margin-top: 20px;
+    }
+
+    .intro {
+        gap: 20px;
+
+        &_title {
+            color: $secondary-normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+
+            @include max-width-768 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &_content {
+            gap: 4px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 42px;
+                color: #262626;
+
+                @include max-width-768 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 4px;
+                color: #979797;
+
+                @include max-width-768 {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+    }
+
+    .customer_reviews {
+        padding-top: 60px;
+        gap: 76px;
+
+        @include max-width-768 {
+            gap: 32px;
+            padding-top: 20px;
+        }
+
+        .box_review {
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+
+            &-content {
+                padding: 32px 32px 0 32px;
+
+                .text_review {
+                    text-align: justify;
+                    color: rgba(51, 27, 59, 0.6);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    @include max-width-375 {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                .name_customer {
+                    gap: 8px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    @include max-width-768 {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

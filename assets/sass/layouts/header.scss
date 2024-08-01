@@ -1,0 +1,141 @@
+$breakpoint-small: 376px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+.text-secondary-normal {
+    color: $secondary-normal !important;
+}
+
+.text-secondary-light-active {
+    color: $secondary-light_active !important;
+}
+
+header {
+    height: 58px;
+    top: 26px;
+    border-bottom: solid 2px $neutral-normal_hover;
+
+    @include max-width-375 {
+        height: auto;
+        margin: 0;
+        top: 0;
+        padding: 10px 0;
+    }
+
+
+}
+
+.navbar {
+    height: 45px;
+
+    @include max-width-375 {
+        padding-top: 10px;
+    }
+
+    .logo {
+        width: 112px;
+        height: 45px;
+        margin: 0;
+
+    }
+
+    .menu {
+        a {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            text-decoration: none;
+            color: $neutral-lighter;
+
+            @include max-width-992 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+        }
+    }
+
+    .search {
+        @include max-width-768 {
+            width: 100%;
+            height: 45px;
+            margin: auto;
+        }
+
+        @include max-width-992 {
+            width: 80%;
+            height: 45px;
+            margin: auto;
+            justify-content: end;
+        }
+
+
+        img {
+            width: 32px;
+            height: 32px;
+
+            @include max-width-992 {
+                margin: 0;
+            }
+        }
+
+        &-content {
+            height: 37px;
+            margin: 0;
+            padding: 8px 32px 8px 8px;
+            display: flex;
+            align-items: center;
+            color: $neutral-lighter;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 28px;
+
+            @include max-width-992 {
+                max-width: 50%;
+            }
+
+            img {
+                margin: 0;
+                width: 16px;
+                height: 16px;
+
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+
+
+            }
+        }
+
+    }
+
+
+}
+
+.nav__input:checked~.nav-mobile {
+    display: block;
+
+}
+
+.nav-mobile {
+    display: none;
+    z-index: 10;
+    background-color: #001E3D;
+
+    .search {
+        @include max-width-992 {
+            width: 100%;
+            height: 45px;
+            margin: auto;
+            justify-content: end;
+        }
+    }
+}
