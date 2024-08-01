@@ -33,8 +33,8 @@
                 <div class="tab-content col-12" id="nav-tabContent">
                     <div class="tab-pane fade active show swiper mySwiper" id="nav-home" role="tabpanel"
                         aria-labelledby="nav-home-tab">
-                        <div class="products swiper-wrapper d-flex justify-content-around">
-                            <div class="product_detail swiper-slide col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
+                        <div class="products d-flex justify-content-around">
+                            <div class="product_detail col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
                                 <div class="img w-100">
                                     <img class="w-100 h-100" src="assets/images/product1.png" alt="">
                                 </div>
@@ -45,7 +45,7 @@
                                     <span>Floor lamp, white</span>
                                 </div>
                             </div>
-                            <div class="product_detail swiper-slide col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
+                            <div class="product_detail col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
                                 <div class="img w-100">
                                     <img class="w-100 h-100" src="assets/images/product2.png" alt="">
                                 </div>
@@ -56,7 +56,7 @@
                                     <span>Floor lamp, white</span>
                                 </div>
                             </div>
-                            <div class="product_detail swiper-slide col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
+                            <div class="product_detail col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
                                 <div class="img w-100">
                                     <img class="w-100 h-100" src="assets/images/product3.png" alt="">
                                 </div>
@@ -67,7 +67,7 @@
                                     <span>Floor lamp, white</span>
                                 </div>
                             </div>
-                            <div class="product_detail swiper-slide col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
+                            <div class="product_detail col-8 col-sm-6 col-lg-3 h-100 d-flex flex-column ">
                                 <div class="img w-100">
                                     <img class="w-100 h-100" src="assets/images/product4.png" alt="">
                                 </div>
