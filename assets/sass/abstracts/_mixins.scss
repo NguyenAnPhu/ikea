@@ -26,7 +26,7 @@ $width-1440: 1440px;
     }
 }
 @mixin min-width-1440 {
-    @media (max-width: #{$width-1440}) {
+    @media (min-width: #{$width-1440}) {
         @content;
     }
 }

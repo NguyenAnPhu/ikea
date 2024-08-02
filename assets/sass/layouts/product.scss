@@ -44,7 +44,7 @@
             line-height: 72px;
             color: #000000;
 
-            @include max-width-768 {
+            @include max-width-992 {
                 font-size: 24px;
                 line-height: 32px;
             }
@@ -57,7 +57,7 @@
             line-height: 24px;
             color: $neutral-light_active;
 
-            @include max-width-768 {
+            @include max-width-992 {
                 font-size: 14px;
                 line-height: 20px;
                 padding: 0 10px;
@@ -82,7 +82,7 @@
             padding-left: 30px;
         }
 
-        @include max-width-768 {
+        @include max-width-992 {
             padding-left: 40px;
             gap: 100px;
         }
@@ -94,7 +94,7 @@
             color: #000000;
             scroll-snap-align: start;
 
-            @include max-width-768 {
+            @include max-width-992 {
                 font-size: 20px;
                 line-height: 28px;
             }
@@ -107,38 +107,100 @@
         }
     }
 
+    // .products {
+    //     gap: 24px;
+    //     margin-left: 140px;
+    //     margin-top: 60px;
+    //     overflow-x: auto;
+    //     white-space: nowrap;
+    //     scroll-behavior: smooth;
+    //     user-select: none;
+    //     width: auto;
+
+    //     &::-webkit-scrollbar {
+    //         width: 0;
+    //     }
+
+    //     @include max-width-375 {
+    //         margin-left: 40px;
+    //         margin-top: 10px;
+    //     }
+
+    //     @include max-width-768 {
+    //         margin-left: 40px;
+    //         margin-top: 10px;
+    //     }
+
+    //     .product_detail {
+    //         gap: 16px;
+    //         scroll-snap-align: start;
+
+    //         .img {
+    //             img {
+    //                 border-radius: 300px 300px 0px 0px;
+    //             }
+    //         }
+
+    //         .product_name {
+    //             font-weight: 500;
+    //             font-size: 20px;
+    //             line-height: 30px;
+    //             color: #000000;
+
+    //             @include max-width-768 {
+    //                 font-size: 16px;
+    //                 line-height: 24px;
+    //             }
+    //         }
+
+    //         .product_description {
+    //             margin: 0;
+    //             font-weight: 400;
+    //             font-size: 16px;
+    //             line-height: 21px;
+    //             color: $neutral-light_active;
+
+    //             @include max-width-768 {
+    //                 font-size: 14px;
+    //                 line-height: 20px;
+    //             }
+    //         }
+    //     }
+    // }
     .products {
+        width: 100%;
+        padding-bottom: 60px;
+        padding-left: 10%;
         gap: 24px;
-        margin-left: 140px;
-        margin-top: 60px;
-        overflow-x: auto;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-        user-select: none;
-        width: auto;
-
-        &::-webkit-scrollbar {
-            width: 0;
+        .swiper-slide{
+            max-width: 440px;
+            @include max-width-992 {
+                max-width: 220px;                
+            }
         }
-
-        @include max-width-375 {
-            margin-left: 40px;
-            margin-top: 10px;
-        }
-
-        @include max-width-768 {
-            margin-left: 40px;
-            margin-top: 10px;
-        }
-
         .product_detail {
+            margin-right: 0 !important;
             gap: 16px;
             scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            // width: 200px !important;
 
             .img {
+                @include max-width-992 {
+                    margin: 0;
+                }
+                margin: 0;
                 img {
                     border-radius: 300px 300px 0px 0px;
+
+                    @include max-width-992 {
+                        width: 200px;
+                        height: 300px;
+                    }
                 }
+
             }
 
             .product_name {
@@ -146,10 +208,13 @@
                 font-size: 20px;
                 line-height: 30px;
                 color: #000000;
+                // padding-left: 20px;
 
-                @include max-width-768 {
+                @include max-width-992 {
                     font-size: 16px;
                     line-height: 24px;
+                    padding-left: 0;
+
                 }
             }
 
@@ -159,10 +224,13 @@
                 font-size: 16px;
                 line-height: 21px;
                 color: $neutral-light_active;
+                // padding-left: 20px;
 
-                @include max-width-768 {
+                @include max-width-992 {
                     font-size: 14px;
                     line-height: 20px;
+                    padding-left: 0;
+
                 }
             }
         }

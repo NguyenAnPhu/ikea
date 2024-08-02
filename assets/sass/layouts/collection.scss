@@ -5,147 +5,169 @@ $breakpoint-small : 376px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 
-.collection {
-
-    min-height: 100vh;
+.bg-collection {
+    height: 975px;
     background-image: url("../images/bg_collection.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include max-width-375 {
-        display: flex;
-        align-items: center;
+    @include max-width-768{
         height: auto;
-        padding-top: 20px;
     }
-
-    @include max-width-768 {
-        min-height: 100%;
-    }
-
-    .img-top-left {
-        aspect-ratio: 240/380;
-        min-width: 240px;
-        @include max-width-768 {
-            display: none;
-        }
-        img {
-
-            border-radius: 0px 112px 112px 112px;
-
-        }
-    }
-
-    .img-top-right {
-        aspect-ratio: 400/486;
-        min-width: 400px;
-        @include max-width-768 {
-            display: none;
-        }
-        img {
-
-            border-radius: 112px 0px 112px 112px;
-
-
-
-        }
-    }
-
-    .img-bot-left {
-        aspect-ratio: 400/486;
-        min-width: 400px;
-        @include max-width-768 {
-            display: none;
-        }
-        img {
-
-            border-radius: 112px 112px 112px 0px;
-
-
-        }
-    }
-
-    .img-bot-right {
-        aspect-ratio: 240/380;
-        min-width: 240px;
-        @include max-width-768 {
-            display: none;
-        }
-        img {
-
-            border-radius: 112px 0px 112px 112px;
-
-        }
-    }
-
-    &_content {
-        gap: 16px;
-        z-index: 5;
-
+    .collection {
+        height: 975px;
         @include max-width-375 {
-            margin: 0;
+            display: flex;
+            align-items: center;
             height: auto;
+            padding-top: 20px;
         }
 
         @include max-width-768 {
-            margin: auto;
-            height: auto;
-            text-align: center;
-            padding: 12px;
+            height: 100%;
         }
+        @include max-width-992 {
+            height: 100%;
+        }
+        @media (min-width:1440px){
+            position: relative;
+        }
+        .img-top-left {
+            aspect-ratio: 240/380;
+            width: 15%;
+            left: 0;
+            top: 0;
 
-        span {
-            color: #404041;
-            font-weight: 800;
-            font-size: 48px;
-            line-height: 72px;
-
-            .special {
-                color: $secondary-color-normal;
+            @include max-width-768 {
+                display: none;
             }
 
-            @include max-width-992 {
-                font-size: 24px;
-                line-height: 32px;
+            img {
+
+                border-radius: 0px 112px 112px 112px;
+
             }
         }
 
-        a {
-            color: $neutral-color-light-active !important;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-            text-align: center;
+        .img-top-right {
+            aspect-ratio: 400/486;
+            width: 25%;
+            top: 0;
+            right: 0;
+
+            @include max-width-768 {
+                display: none;
+            }
+
+            img {
+
+                border-radius: 112px 0px 112px 112px;
+            }
+        }
+
+        .img-bot-left {
+            aspect-ratio: 400/486;
+            width: 25%;
+            bottom: 0;
+            left: 0px;
+
+            @include max-width-768 {
+                display: none;
+            }
+
+            img {
+
+                border-radius: 112px 112px 112px 0px;
+
+
+            }
+        }
+
+        .img-bot-right {
+            aspect-ratio: 240/380;
+            width: 15%;
+            bottom: 0;
+            right: 0;
+
+            @include max-width-768 {
+                display: none;
+            }
+
+            img {
+
+                border-radius: 112px 0px 112px 112px;
+
+            }
+        }
+
+        &_content {
+            gap: 16px;
+            z-index: 5;
 
             @include max-width-375 {
-                font-size: 14px;
-                line-height: 20px;
-                padding-left: 10px;
-                padding-right: 10px;
+                margin: 0;
+                height: auto;
             }
-        }
 
-        .btn {
-            &-more {
-                padding: 8px 32px 8px 32px;
-                border-radius: 40px;
-                background-color: $secondary-normal-hover;
-                border: none;
-                outline: none;
-                color: #FFFFFF;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 24px;
+            @include max-width-768 {
+                margin: auto;
+                height: auto;
+                text-align: center;
+                padding: 12px;
+            }
 
-                &:hover {
-                    background-color: #FFFFFF;
-                    color: $secondary-normal-hover;
+            span {
+                color: #404041;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 72px;
+
+                .special {
+                    color: $secondary-color-normal;
                 }
+
+                @include max-width-992 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+
+            a {
+                color: $neutral-color-light-active !important;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
 
                 @include max-width-375 {
                     font-size: 14px;
-                    margin-bottom: 20px;
+                    line-height: 20px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .btn {
+                &-more {
+                    padding: 8px 32px 8px 32px;
+                    border-radius: 40px;
+                    background-color: $secondary-normal-hover;
+                    border: none;
+                    outline: none;
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: $secondary-normal-hover;
+                    }
+
+                    @include max-width-375 {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
