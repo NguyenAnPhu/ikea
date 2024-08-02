@@ -40,6 +40,10 @@ header {
   }
 }
 
+.menu-canvas {
+  background-color: #001E3D !important;
+}
+
 .navbar {
   height: 45px;
 }
@@ -204,17 +208,9 @@ header {
   line-height: 30px;
   color: #b0cbe6;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .content-intro .description {
     margin: 0;
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-@media (min-width: 376px) and (max-width: 768px) {
-  .content-intro .description {
-    margin: 0;
-    font-weight: 200;
     font-size: 14px;
     line-height: 16px;
   }
@@ -836,6 +832,8 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 31px;
 }
 @media (max-width: 768px) {
   .review .customer_reviews .box_review-content .name_customer {
@@ -900,7 +898,7 @@ header {
 }
 .faq .QnA .accordion-item {
   border: none;
-  gap: 32px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .faq .QnA .accordion-item {
@@ -908,7 +906,7 @@ header {
   }
 }
 .faq .QnA .accordion-item .accordion-button {
-  padding: 16px 0;
+  padding: 32px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -935,7 +933,7 @@ header {
 }
 .faq .QnA .accordion-item .accordion-body {
   color: #909dad;
-  padding: 0;
+  padding-bottom: 32px;
   text-align: left;
   font-weight: 400;
   font-size: 16px;
@@ -1017,7 +1015,8 @@ header {
   border: none;
   outline: none;
   border-radius: 6px;
-  padding-left: 6px;
+  padding-left: 24px;
+  color: #979797;
 }
 @media (max-width: 375px) {
   .newsletter_content .subscribe input {
@@ -1038,6 +1037,7 @@ header {
   line-height: 24px;
   border: none;
   outline: none;
+  padding: 14px 40px;
 }
 @media (max-width: 375px) {
   .newsletter_content .subscribe_btn .btn {
@@ -1170,6 +1170,9 @@ header {
   font-size: 18px;
   line-height: 28px;
   color: #DADADA;
+}
+.footer_content .menu .help a:hover {
+  color: #fbda0c;
 }
 @media (max-width: 375px) {
   .footer_content .menu .help a {

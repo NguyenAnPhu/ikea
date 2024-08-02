@@ -3,7 +3,7 @@
         <div class="faq_title col-12 text-center">
             <span>POPURLAR QUESTIONS</span>
         </div>
-        <div class="faq_content col-10 d-flex flex-column h-auto text-center">
+        <div class="faq_content col-6 d-flex flex-column h-auto text-center">
             <span>Frequently Asked Questions</span>
             <p>Get expert advice and solutions to your IKEA-related questions in our comprehensive Q&A section, covering
                 everything from furniture selection to storage solutions and home styling tips.</p>

@@ -5,8 +5,8 @@
             <p>Endless Possibilities for Every Room - Explore IKEA's Product Categories</p>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <div class="card m-0">
-                <nav class="m-0">
+            <div class="card m-0 ">
+                <nav class="m-0 mb-5">
                     <div class="nav nav-tabs mb-3 border-0 " id="nav-tab" role="tablist">
                         <div class="product_category d-flex justify-content-around">
                             <button class="nav-link item active" id="nav-home-tab" data-bs-toggle="tab"
@@ -410,33 +410,12 @@ enableDragScroll(products);
 <script>
 var swiper = new Swiper(".mySwiper", {
     initialSlide: 1,
+    loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
-    speed: 200,
-    slidesPerView: 1,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-
-        575: {
-            slidesPerView: 2,
-        },
-        796: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 2,
-        },
-        1220: {
-            slidesPerView: 3,
-        },
-        // 1440: {
-        //     slidesPerView: 3,
-        // },
-
-    }
+    slidesPerView: "auto",
+    speed: 2000,
 });
 </script>

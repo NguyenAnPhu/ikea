@@ -124,7 +124,9 @@
                     font-size: 18px;
                     line-height: 28px;
                     color: #DADADA;
-
+                    &:hover{
+                        color: $secondary-normal;
+                    }
                     @include max-width-375 {
                         font-size: 12px;
                         line-height: 16px;

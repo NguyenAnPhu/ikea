@@ -54,14 +54,13 @@
 
         .accordion-item {
             border: none;
-            gap: 32px;
-
+            margin-bottom: 30px;
             @include max-width-768 {
                 gap: 12px;
             }
 
             .accordion-button {
-                padding: 16px 0;
+                padding: 32px 0;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 32px;
@@ -94,7 +93,7 @@
 
             .accordion-body {
                 color: $neutral-light_active;
-                padding: 0;
+                padding-bottom: 32px;
                 text-align: left;
                 font-weight: 400;
                 font-size: 16px;
