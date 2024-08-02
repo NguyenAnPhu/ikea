@@ -360,7 +360,8 @@ header {
     margin: auto;
     height: auto;
     text-align: center;
-    padding: 12px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .bg-collection .collection_content span {
@@ -468,12 +469,6 @@ header {
   .about_us-content p {
     font-size: 16px;
     line-height: 24px;
-  }
-}
-@media (max-width: 992px) {
-  .about_us-content p {
-    font-size: 14px;
-    line-height: 20px;
   }
 }
 .about_us-img img {

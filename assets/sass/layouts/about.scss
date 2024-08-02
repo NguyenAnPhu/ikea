@@ -52,10 +52,7 @@ $breakpoint-lg: 992px;
                     line-height: 24px;
                 }
 
-                @include max-width-992 {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
+
             }
         }
 
